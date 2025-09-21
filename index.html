@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Wedding of Awan & Pelangi</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Panel kiri -->
+    <div class="left-panel">
+      <div class="overlay"></div>
+      <div class="left-text">
+        <h3 class="animate-left delay1">The Wedding of</h3>
+        <h1 class="animate-left delay2">AWAN & PELANGI</h1>
+        <p class="animate-left delay3">Minggu, 26 Desember 2025</p>
+      </div>
+    </div>
+
+    <!-- Panel kanan -->
+    <div class="right-panel" id="rightPanel">
+      <div class="cover-content" id="coverContent">
+        <h3 class="animate-text delay1">The Wedding of</h3>
+        <h1 class="animate-text delay2">AWAN</h1>
+        <h1 class="animate-text delay3"><span>&</span></h1>
+        <h1 class="animate-text delay4">PELANGI</h1>
+        <p style="margin-top: 5px;  margin-bottom: 5px;" class="animate-text delay5">Kepada :</p>
+        <p style="font-size: 16px;" class="animate-text delay5"><strong>Nama Tamu</strong> </p>
+         <!-- Tombol dengan ikon -->
+        <button class="open-btn animate-text delay6" onclick="openInvitation()">
+          <i style="margin-right: 5px;" class="fa-solid fa-envelope"></i> Buka Undangan
+        </button>
+      </div>
+
+      <!-- Quotes -->
+      <section id="quotes">
+        <div class="quotes-overlay">
+            <div class="scroll-animate quotes-content">
+              <!-- Foto pengantin -->
+              <div class="quotes-photo">
+                <img src="IMG_0004-scaled.jpg" alt="Foto Pengantin">
+              </div>
+
+              <!-- Inisial -->
+              <div class="quotes-initial scroll-animate">
+                <h2>A <span>&</span> P</h2>
+              </div>
+
+              <!-- Ayat Al-Qur’an -->
+              <div class="quotes-text scroll-animate">
+                <p ><em>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan
+                  untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya,
+                  dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu
+                  benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</em></p>
+                <p><strong>QS. Ar-Rum: 21</strong></p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+    <!-- SAVE DATE -->
+    <section id="save-date">
+    <div class="save-date-overlay"></div>
+
+    <div class="save-date-content">
+      <p class="judul-kecil scroll-animate">SAVE THE DATE</p>
+      <!--<h1 class="judul-nama">Awan & Pelangi</h1>
+      <p class="tanggal">MINGGU, 26 DESEMBER 2025</p> -->
+
+      <div id="countdown">
+        <div class="countdown-item scroll-animate">
+          <span id="days">0</span>
+          <p>Hari</p>
+        </div>
+        <div class="countdown-item scroll-animate">
+          <span id="hours">0</span>
+          <p>Jam</p>
+        </div>
+        <div class="countdown-item scroll-animate">
+          <span id="minutes">0</span>
+          <p>Menit</p>
+        </div>
+        <div class="countdown-item scroll-animate">
+          <span id="seconds">0</span>
+          <p>Detik</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Profil Mempelai -->
+    <section id="profil">
+      <div class="profil-content">
+        
+        <!-- Profil Pria -->
+        <div class="profil-card">
+          <!-- Foto -->
+          <div class="profil-photo scroll-animate">
+            <img src="IMG_0181-scaled - Copy.jpg" alt="Foto Mempelai Pria">
+          </div>
+          <!-- Info Pria -->
+          <div class="profil-info scroll-animate">
+            <h3 class="profil-nickname">Awan</h3>
+            <h2 class="profil-name">Awan Cahya Pagi, S.Tr.Ds.</h2>
+            <p class="name-ortu">Putra Pertama dari<br> Bapak Bintang & Ibu Embun Bening</p>
+            <a href="https://instagram.com/awan__21" target="_blank" class="ig-btn">
+              <i class="fa-brands fa-instagram"></i> @awan__21
+            </a>
+          </div>
+        </div>
+
+        <!-- Simbol & --> 
+         <div class="profil-and scroll-animate"> 
+          <h1>&</h1> 
+        </div>
+
+        <!-- Profil Wanita -->
+        <div class="profil-card">
+          <!-- Foto -->
+          <div class="profil-photo scroll-animate">
+            <img src="IMG_0120-1-scaled - Copy.jpg" alt="Foto Mempelai Wanita">
+          </div>
+
+          <!-- Info Wanita -->
+          <div class="profil-info scroll-animate">
+            <h3 class="profil-nickname">Pelangi</h3>
+            <h2 class="profil-name">Pelangi Cahaya Senja</h2>
+            <p class="name-ortu">Putri Ketiga dari<br>Bapak Semesta & Ibu Mentari</p>
+            <a href="https://instagram.com/pelangi_21" target="_blank" class="ig-btn">
+              <i class="fa-brands fa-instagram"></i> @pelangi_21
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Akad -->
+    <section id="akad">
+      <div class="akad-card scroll-animate">
+        <!-- Bunga hiasan -->
+        <img src="flower-right.png" alt="Bunga Kiri" class="bunga bunga-kanan scroll-animate">
+        <img src="flower-left.png" alt="Bunga Kiri" class="bunga bunga-kiri scroll-animate">
+        <h2>AKAD NIKAH</h2>
+        <h3>Minggu</h3>
+        <p class="akad-date scroll-animate">26 DESEMBER 2025</p>
+        <p class="akad-time scroll-animate">08.00 WIB - 10.00 WIB</p>
+        <h4>AUDITORIUM MASJID</h4>
+        <p class="akad-address scroll-animate">
+          Jalan Raya Bojongsari No.5, Gunung Putri, Citeureup, Bogor, Jawa Barat
+        </p>
+        <a href="https://maps.google.com" target="_blank" class="map-btn scroll-animate">
+          <i class="fa-solid fa-location-dot"></i> Google Map
+        </a>
+      </div>
+    </section>
+
+    <!-- Resepsi -->
+    <section id="resepsi">
+      <div class="resepsi-card scroll-animate">
+        <!-- Bunga hiasan -->
+        <img src="flower-right.png" alt="Bunga Kiri" class="bunga bunga-kanan scroll-animate">
+        <img src="flower-left.png" alt="Bunga Kiri" class="bunga bunga-kiri scroll-animate">
+        <h2>RESEPSI</h2>
+        <h3>Minggu</h3>
+        <p class="resepsi-date scroll-animate">26 DESEMBER 2025</p>
+        <p class="resepsi-time scroll-animate">10.00 WIB - 14.00 WIB</p>
+        <h4>GEDUNG GRAHA PGRI MAGETAN</h4>
+        <p class="resepsi-address scroll-animate">
+          Jl. Raya Magetan No.10, Magetan, Jawa Timur
+        </p>
+        <a href="https://maps.google.com" target="_blank" class="map-btn scroll-animate">
+          <i class="fa-solid fa-location-dot"></i> Google Map
+        </a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="gallery-card scroll-animate">
+        <h2>Galeri</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item big gallery-animate"><img src="IMG_0008-scaled.jpg" alt="Foto 1"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_0058-scaled.jpg" alt="Foto 2"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_0046-scaled.jpg" alt="Foto 3"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_9859-scaled.jpg" alt="Foto 4"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_0004-scaled.jpg" alt="Foto 5"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_0058-scaled.jpg" alt="Foto 6"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_0046-scaled.jpg" alt="Foto 7"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_9859-scaled.jpg" alt="Foto 8"></div>
+          <div class="gallery-item gallery-animate"><img src="IMG_0004-scaled.jpg" alt="Foto 9"></div>
+          <div class="gallery-item big gallery-animate"><img src="IMG_0060-scaled.jpg" alt="Foto 10"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Story -->
+        <section id="love-story">
+          <div class="love-card scroll-animate">
+            <h2 class="love-title">Love Story</h2>
+
+            <div class="story-item story-animate">
+              <h3>2022</h3>
+              <p>Kami pertama kali bertemu satu sama lain di sebuah acara peminatan di kampus. 
+              Kami berkenalan karena kami menjadi perwakilan masing-masing divisi kegiatan 
+              yang kami selenggarakan.</p>
+            </div>
+
+            <div class="story-item story-animate">
+              <h3>2023</h3>
+              <p>Setelah lama tidak bertemu akhirnya kami bertemu kembali di sebuah acara 
+              seminar profesional. Kebetulan kami berada di bidang yang sama.</p>
+            </div>
+
+            <div class="story-item story-animate">
+              <h3>2024</h3>
+              <p>Salah satu momen yang tidak disangka, Awan melamar saya dengan langsung 
+                menyatakan keinginannya kepada ayah saya. Kami pun bersiap dengan petualangan baru.</p>
+            </div>
+
+            <div class="story-item story-animate">
+              <h3>2025</h3>
+              <p>Momen spesial kami akan dimulai dari titik ini, momen kebahagiaan kami bersama 
+                membangun keluarga kecil kami. Semoga Allah SWT memberikan keberkahan untuk pernikahan kami.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- RSVP -->
+        <section id="rsvp">
+          <div class="rsvp-card rsvp-animate">
+            <h2>Wish & RSVP</h2>
+            <p class="ucapan-count">
+              <i class="fa-regular fa-comment-dots"></i> 
+              <span id="ucapanCount">0</span> Ucapan
+            </p>
+            
+            <form id="rsvpForm" class="rsvp-form scroll-animate delay-rsvp">
+              <input type="text" id="namaTamu" placeholder="Nama Tamu" required>
+              <input type="tel" id="noTelp" placeholder="Nomor Telepon" required>
+              <input type="text" id="hubungan" placeholder="Hubungan dengan Mempelai" required>
+              
+              <select id="kehadiran" required>
+                <option value="">Konfirmasi Kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+              
+              <textarea id="ucapan" placeholder="Tulis ucapan" required></textarea>
+              <button type="submit">Kirim</button>
+            </form>
+
+            <!-- daftar ucapan -->
+            <div id="listUcapan" class="ucapan-list"></div>
+          </div>
+        </section>
+
+
+        <!-- Love Gift -->
+        <section id="gift">
+          <div class="gift-card scroll-animate">
+            <h2 class="love-title scroll-animate">Love Gift</h2>
+            <p>Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang berkenan 
+            berbagi tanda kasih, dengan senang<br> hati kami menerima melalui:</p>
+
+            <div class="gift-box scroll-animate">
+              <!-- Bank BRI -->
+              <div class="gift-item">
+                <img src="logo-bri.png" alt="Bank BRI" class="bank-logo">
+                <p><strong>Bank BRI</strong><br>No. Rekening <strong>12345678910</strong><br>a.n <strong>Awan Cahya Pagi</strong></p>
+                <button class="copy-btn">Copy Nomor Rekening</button>
+              </div>
+              <hr>
+
+              <!-- Bank BCA 
+              <div class="gift-item">
+                <img src="logo-bca.png" alt="Bank BCA" class="bank-logo">
+                <p><strong>Bank BCA</strong><br>No. Rekening <strong>56789010234</strong><br>a.n <strong>Pelangi Cahaya Senja</strong></p>
+                <button class="copy-btn">Copy Nomor Rekening</button>
+              </div>
+              <hr> -->
+
+              <!-- Kirim Kado -->
+              <div class="gift-item">
+                <img style="width: 50px; height: 50px;" src="logo-rumah.png" alt="Kirim Kado" class="bank-logo">
+                <p style="font-size: 16px;"><strong>Kirim Kado</strong></p>
+                <p><strong>Kediaman Mempelai Wanita</strong><br>
+                  Jl. Raya Bojongsari No.5, Gunung Putri, Citeureup, Bogor, Jawa Barat</p>
+                <a href="https://maps.google.com" target="_blank" class="map-btn">
+                  <i class="fa-solid fa-location-dot"></i> Google Map
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       <!-- Closing + Footer  -->
+      <section id="closing">
+        <div class="closing-overlay"></div>
+
+        <div class="closing-content">
+          <div class="closing-text scroll-animate">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, 
+              apabila Bapak/Ibu/Saudara/i berkenan hadir 
+              dan memberikan doa restu kepada kami.</p>
+            <p class="closing-thanks scroll-animate">Hormat Kami yang Berbahagia,</p>
+            <h2 class="closing-names scroll-animate">Awan & Pelangi</h2>
+          </div>
+
+          <!-- Footer dalam halaman closing -->
+          <footer class="closing-footer scroll-animate">
+            <p>Design with ❤️ by <a href="https://instagram.com/aunisinvitations_com" target="_blank">aunisinvitations.com</a></p>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Kontrol Musik -->
+      <div class="kontrol-musik">
+        <audio id="musik" autoplay loop>
+          <source src="/Nyoman Paul, Andi Rianto – The Way You Look At Me  – Start 01.23 .mp3" type="audio/mp3" />
+          Browser Anda tidak mendukung audio.
+        </audio>
+        <button id="tombolMusik" onclick="toggleMusik()">
+          <i class="fa-solid fa-music"></i>
+        </button>
+      </div>
+        
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
